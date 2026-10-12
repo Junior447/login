@@ -1,0 +1,226 @@
+*{
+    box-sizing: border-box;
+    color: white;
+    margin: 0px;
+    
+  }
+  header.cabecalho{
+    display: flex;
+    align-items: center;
+    width: 100%;
+    height: 10vh;
+    background-color: rgb(0, 0, 255);
+    padding: 12px;
+    gap: 10px;
+    position:fixed;
+    top: 0px;
+  }
+  nav.menu{
+    display: flex;
+    gap: 50px;
+   
+
+  }
+
+ 
+ 
+  a{
+    display:block;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
+    color:rgb(248, 243, 243);
+
+   
+  }
+  
+
+  a:hover{
+    background-color: black;
+  }
+
+  section.elementos{
+    display: flex;
+    justify-content:right;
+    align-items: center;
+    width: 100%;
+    height: auto;
+    padding: 20px;
+    gap: 10px;
+    background-color: rgb(206, 199, 199);
+  }
+
+  form{
+
+    width:100%;
+    margin-top: 100px;
+    max-width: 400px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: start;
+    gap: 20px;
+    border: 1px solid black;
+    padding:30px 0px;
+    border-radius: 40px;
+    background-image:  url(../linktree/abstract-luxury-gradient-blue-background-smooth-dark-blue-with-black-vignette-studio-banner.jpg);
+    background-size: cover;
+    background-position: center;
+    border: none;
+  }
+  img.profile{
+    width: 100%;
+    max-width: 120px;
+    border-radius: 100%;
+    border: 5px solid blue;
+
+  }
+  label{
+    width: 100%;
+    max-width: 250px;
+  }
+ 
+  input#nome {
+    height: 30px;
+    width: 100%;
+    max-width: 300px;
+    background-color: transparent;
+    border: none; /* 'none' é mais recomendado que 'transparent' para remover bordas */
+    border-bottom: 1px solid white;
+  }
+  
+  input#senha {
+    background-color: transparent;
+    border: none;
+    margin-left: -15px;
+
+   
+  }
+  
+  /* Aplica o foco para todos os inputs */
+  input:focus {
+    background-color: transparent;
+    outline: none;
+  }
+  
+  /* Remove a cor de fundo que o navegador força no Autocomplete */
+  input:-webkit-autofill,
+  input:-webkit-autofill:hover, 
+  input:-webkit-autofill:focus {
+    -webkit-text-fill-color: white; /* Mantém a cor do texto branca */
+    transition: background-color 10000s ease-in-out 0s; /* Truque para o fundo não mudar de cor */
+  }
+  
+
+  div.campo-senha{
+    border: 1px solid white;
+    width: 100%;
+    max-width: 300px;
+    display: flex;
+    justify-content: space-around;
+    padding: 5px 0px;
+    border: transparent;
+    border-bottom: 1px white solid;
+
+  }
+ 
+  ::placeholder{
+    color: white;
+    font-size:15px;
+    font-weight: 500;
+    margin-left: -10px;
+
+
+  }
+  button{
+    width: 100%;
+    max-width: 200px;
+    padding: 10px 0px;
+    background-color:transparent;
+    border: 1px solid white;
+  }
+
+  .versenha{
+
+  
+    width: 35px;
+   
+  }
+  @media (max-width:600px) {
+   /* ... (mantenha todo o seu código de cima igual até chegar no @media) ... */
+
+@media (max-width: 600px) {
+  section.elementos {
+    justify-content: center;
+    align-items: center;
+   
+  }
+
+  div.hamburguer {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    align-items: center;
+    justify-content: center;
+    padding: 0px 5px;
+    width: 40px; /* Ajustado um pouco para ficar mais proporcional */
+    height: 35px;
+    border: 1px solid white;
+    z-index: 1000; /* Garante que o botão fique acima de tudo */
+    cursor: pointer;
+  }
+
+  span.linha {
+    border: 1px solid white;
+    width: 100%;
+  }
+
+  nav.menu {
+    display: flex;             /* Mudamos para flex para estruturar os itens */
+    flex-direction: column;    /* Links um embaixo do outro */
+    justify-content: flex-start;
+    padding-top: 80px;         /* Espaço para não cobrir os links com o botão */
+    
+    width:100%;
+    max-width: 300px;
+    height: 100vh;
+    background-color: black;
+    
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 999;
+
+    /* EFEITO DE SLIDE: Joga o menu 100% para a esquerda (fora da tela) */
+    transform: translateY(-100%);
+    transition: transform 0.6s ease-in-out; /* Velocidade suave da animação */
+  }
+
+  /* QUANDO O MENU ESTIVER ABERTO */
+  nav.menu.abrir {
+    /* Traz o menu de volta para a posição original (0) na tela */
+    transform: translateY(0);
+
+ 
+    
+    
+  }
+  a{
+   padding: 0px 20px;
+    
+    
+
+  }
+  a:hover{
+    border-bottom: 1px solid white;
+    background-color: blue;
+    cursor: pointer;
+
+  }
+}
+
+}
+
+
+
+  
