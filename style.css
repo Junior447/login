@@ -44,7 +44,7 @@
     justify-content:right;
     align-items: center;
     width: 100%;
-    height: auto;
+    height: 100vh;
     padding: 20px;
     gap: 10px;
     background-color: rgb(206, 199, 199);
